@@ -16,6 +16,10 @@ h1, h2 { margin-bottom:20px; }
 ul { list-style-type: square; margin-left:20px; }
 a { color:white; text-decoration:none; }
 footer { background:#333; color:white; text-align:center; }
+form { display:flex; flex-direction:column; max-width:500px; margin:auto; }
+input, textarea { margin-bottom:10px; padding:10px; font-size:16px; }
+input[type="submit"] { background:#0A74DA; color:white; border:none; cursor:pointer; }
+input[type="submit"]:hover { background:#064A8E; }
 </style>
 </head>
 <body>
@@ -27,13 +31,13 @@ footer { background:#333; color:white; text-align:center; }
 </header>
 
 <section>
-<h2>About Elias Kamau</h2>
-<p>I am a motivated IT graduate with a Diploma in Information Technology from Mount Kenya University. I specialize in data entry, Excel automation, database management, and Python scripting. I combine strong technical skills with reliability and professionalism to deliver accurate results for businesses worldwide.</p>
+<h2>About Me</h2>
+<p>I am a detail-oriented freelancer specializing in data entry, Excel automation, database management, and Python scripting. I deliver reliable, accurate results for businesses worldwide, helping them save time and streamline operations.</p>
 <ul>
-<li>Diploma in Information Technology – Mount Kenya University</li>
-<li>Certificate in Database Management – Webbs Institute</li>
-<li>Practical experience with Java, Python, JavaScript, React, Spring Boot, Django</li>
-<li>Proven freelance experience in automation, data cleanup, and Excel reporting</li>
+<li>Practical experience with Python, Java, JavaScript, React, Spring Boot, Django</li>
+<li>Excel Automation: Formulas, PivotTables, data cleanup</li>
+<li>Database Management: MySQL, CSV/Excel cleaning, data validation</li>
+<li>Freelance experience in report automation and workflow optimization</li>
 </ul>
 </section>
 
@@ -61,10 +65,23 @@ footer { background:#333; color:white; text-align:center; }
 </section>
 
 <section>
-<h2>Hire Me Today</h2>
-<p>I’m available for part-time remote projects. For inquiries or project discussions, contact me only via email:</p>
-<p><strong>Email: <a href="mailto:kamauelias742@gmail.com">kamauelias742@gmail.com</a></strong></p>
-<a href="mailto:kamauelias742@gmail.com"><button>Send Email Now</button></a>
+<h2>Contact Me</h2>
+<p>I’m available for part-time remote projects. Fill out the form below or click the button to send an email:</p>
+
+<!-- Simple mailto form -->
+<form action="mailto:kamauelias742@gmail.com" method="post" enctype="text/plain">
+<label for="name">Name:</label>
+<input type="text" id="name" name="Name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="Email" required>
+<label for="message">Message:</label>
+<textarea id="message" name="Message" rows="5" required></textarea>
+<input type="submit" value="Send Message">
+</form>
+
+<p style="text-align:center; margin-top:10px;">
+<a href="mailto:kamauelias742@gmail.com"><button>Send Email Directly</button></a>
+</p>
 </section>
 
 <footer>
